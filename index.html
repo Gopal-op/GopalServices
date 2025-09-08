@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions by Gopal</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Include Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: none;
+            z-index: 50;
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        .scroll-to-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 w-full z-40">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white">GopalServices</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-500 transition-colors">About</a>
+                <a href="#services" class="hover:text-blue-500 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-blue-500 transition-colors">Portfolio</a>
+                <a href="#pricing" class="hover:text-blue-500 transition-colors">Pricing</a>
+                <a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/90 text-center py-4">
+            <a href="#about" class="block py-2 hover:bg-gray-700 transition-colors">About</a>
+            <a href="#services" class="block py-2 hover:bg-gray-700 transition-colors">Services</a>
+            <a href="#portfolio" class="block py-2 hover:bg-gray-700 transition-colors">Portfolio</a>
+            <a href="#pricing" class="block py-2 hover:bg-gray-700 transition-colors">Pricing</a>
+            <a href="#contact" class="block py-2 hover:bg-gray-700 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0d131f/1e293b?text=Digital+Solutions');">
+        <div class="bg-gray-900/50 p-8 md:p-12 rounded-lg backdrop-blur-sm">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-white mb-4">
+                GopalServices
+            </h1>
+            <p class="text-lg md:text-2xl font-medium text-gray-400 mb-8">
+                Building digital solutions that work.
+            </p>
+            <a href="#contact" class="cta-button inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Start Your Project
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="gopal.png" alt="Professional Photo" class="w-full h-auto object-cover">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Who I Am</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed mb-4">
+                        I am a passionate developer dedicated to creating high-quality, reliable, and innovative digital solutions. I specialize in turning complex ideas into simple, elegant, and functional products. My approach is client-first, ensuring every project is perfectly tailored to your unique needs and goals. I believe in transparent communication and building long-lasting partnerships based on trust and exceptional results.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        My expertise spans across custom software, captivating visuals, and seamless web experiences. Let's work together to bring your vision to life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">My Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+                    <!-- Icon SVG for Bot Development -->
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 10h2m10 0h2M3 14h2m10 0h2M7 10h10a2 2 0 012 2v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2a2 2 0 012-2z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Bot Development</h3>
+                    <p class="text-gray-400">Automate tasks and enhance communities with custom Discord bots.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+                    <!-- Icon SVG for Logo Design -->
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 100 4m0 10a2 2 0 100 4m-8-2a2 2 0 100-4m16 0a2 2 0 100-4M3 12h2m-2-2h2m12 0h2m-2-2h2m-2 4h-2m-2-4h2m-6 4h2m-2 4h2m-2-4h2m-2 4h2m-2-4h2m-2-4h2m-2 4h2m-2 4h2m-2-4h2m-2-4h2m-2 4h2m-2 4h2"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Logo Design</h3>
+                    <p class="text-gray-400">Craft a memorable visual identity for your brand or bot.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+                    <!-- Icon SVG for Website Creation -->
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-4m4-4-4-4m-6 4-4-4m4 4v4m0-4h4m0 4h-4m0-4-4-4m4 4h4m0-4h4m-4 4-4 4m4 4v4m0-4v-4"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">Website Creation</h3>
+                    <p class="text-gray-400">Professional, responsive websites tailored to your unique needs.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+                    <!-- Icon SVG for More -->
+                    <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7v14"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-white mb-2">More...</h3>
+                    <p class="text-gray-400">Expand your digital presence with custom solutions and consultations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Showcase Section -->
+    <section id="portfolio" class="section-padding bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">My Work</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Bot+Project" alt="Bot Project" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Discord Bot Name</h3>
+                        <p class="text-gray-300 px-4">A custom moderation and entertainment bot.</p>
+                    </div>
+                </a>
+                <!-- Portfolio Item 2 -->
+                <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Logo+Design" alt="Logo Design" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Logo</h3>
+                        <p class="text-gray-300 px-4">A professional and clean logo design for a startup.</p>
+                    </div>
+                </a>
+                <!-- Portfolio Item 3 -->
+                <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
+                    <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Website+Creation" alt="Website Creation" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Company Website</h3>
+                        <p class="text-gray-300 px-4">A responsive and fast-loading e-commerce site.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Pricing & Packages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- Starter Plan -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-blue-500 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-4">Starter</h3>
+                    <p class="text-4xl font-extrabold text-blue-500 mb-2">
+                        <span class="text-xl text-gray-400">$</span>
+                        <span class="text-5xl">1</span>
+                        <span class="text-lg text-gray-400">/ project</span>
+                    </p>
+                    <p class="text-sm text-gray-400 mb-6">A great start for new projects.</p>
+                    <ul class="text-gray-300 text-left space-y-3 mb-8">
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> Basic functionality
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> 1 Logo <strong>or</strong> 1 Website <strong>or</strong> 1 Bot
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> Basic results
+                        </li>
+                    </ul>
+                    <a href="#contact" class="cta-button w-full inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Choose Plan
+                    </a>
+                </div>
+                <!-- Pro Plan (Highlighted) -->
+                <div class="bg-blue-600 p-8 rounded-lg shadow-xl border-4 border-blue-500 transform scale-105 transition-transform duration-300">
+                    <p class="text-sm font-bold text-white bg-blue-800 rounded-full px-3 py-1 mb-2 inline-block">Most Popular</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">Pro</h3>
+                    <p class="text-4xl font-extrabold text-white mb-2">
+                        <span class="text-xl text-blue-200">$</span>
+                        <span class="text-5xl">3</span>
+                        <span class="text-lg text-blue-200">/ project</span>
+                    </p>
+                    <p class="text-sm text-blue-200 mb-6">For businesses that want more.</p>
+                    <ul class="text-gray-100 text-left space-y-3 mb-8">
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> 1 Logo, 1 Website and 1 Bot
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> Supportive works
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> better results
+                        </li>
+                    </ul>
+                    <a href="#contact" class="cta-button w-full inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Choose Plan
+                    </a>
+                </div>
+                <!-- Custom Plan -->
+                <div class="bg-gray-700 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-blue-500 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-4">Premium</h3>
+                    <p class="text-4xl font-extrabold text-white mb-2">
+                        <span class="text-xl text-blue-200">$</span>
+                        <span class="text-5xl">4.5</span>
+                        <span class="text-lg text-blue-200">/ project</span>
+                    </p>
+                    <p class="text-sm <tex></tex>t-gray-400 mb-6">For unique, high-scope projects.</p>
+                    <ul class="text-gray-300 text-left space-y-3 mb-8">
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> Everything in Pro
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> +1 Website Free ($.50)
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg> Priority support & more
+                        </li>
+                    </ul>
+                    <a href="#contact" class="cta-button w-full inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                       Choose Plan
+                    </a>
+                </div>
+            </div>
+            <p class="text-sm text-gray-400 mt-8">Don't see what you need? All plans are customizable. Contact me for a personalized quote.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Let's Build Something Together</h2>
+            <div class="max-w-xl mx-auto">
+                <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <select id="service" name="service" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-blue-500 text-gray-400">
+                            <option value="">Select a Service</option>
+                            <option value="bot">Bot Development</option>
+                            <option value="logo">Logo Design</option>
+                            <option value="website">Website Creation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full cta-button bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-medium">Or find me on:</p>
+                    <p class="text-blue-400 mt-2 text-xl font-mono">Discord: ig.gopalofficial</p>
+                    <a href="mailto: gopalexample@gmail.com" class="text-blue-400 hover:underline">gopalexample@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-gray-400">
+        <p>&copy; 2025 GopalServices. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Show/hide scroll to top button
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>
