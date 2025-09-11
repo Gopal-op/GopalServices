@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="wfiUuAn7Czotv94XALDFjVRyAIBFKlBpn5uzWTcEtzc" />
-    <title>Gopal Service</title>
-    <!-- Use the Inter font from Google Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Include Tailwind CSS from CDN -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -59,7 +58,6 @@
 
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- Header & Navigation -->
     <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 w-full z-40">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-tight text-white">GopalServices</a>
@@ -70,14 +68,12 @@
                 <a href="#pricing" class="hover:text-blue-500 transition-colors">Pricing</a>
                 <a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a>
             </div>
-            <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden text-gray-400 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800/90 text-center py-4">
             <a href="#about" class="block py-2 hover:bg-gray-700 transition-colors">About</a>
             <a href="#services" class="block py-2 hover:bg-gray-700 transition-colors">Services</a>
@@ -87,7 +83,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0d131f/1e293b?text=Digital+Solutions');">
         <div class="bg-gray-900/50 p-8 md:p-12 rounded-lg backdrop-blur-sm">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-white mb-4">
@@ -102,7 +97,6 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
     <section id="about" class="section-padding bg-gray-900">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -122,41 +116,32 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="section-padding bg-gray-800">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12">My Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service Card 1 -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                    <!-- Icon SVG for Bot Development -->
                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 10h2m10 0h2M3 14h2m10 0h2M7 10h10a2 2 0 012 2v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2a2 2 0 012-2z"></path>
                     </svg>
                     <h3 class="text-xl font-semibold text-white mb-2">Bot Development</h3>
                     <p class="text-gray-400">Automate tasks and enhance communities with custom Discord bots.</p>
                 </div>
-                <!-- Service Card 2 -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                    <!-- Icon SVG for Logo Design -->
                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 100 4m0 10a2 2 0 100 4m-8-2a2 2 0 100-4m16 0a2 2 0 100-4M3 12h2m-2-2h2m12 0h2m-2-2h2m-2 4h-2m-2-4h2m-6 4h2m-2 4h2m-2-4h2m-2 4h2m-2-4h2m-2-4h2m-2 4h2m-2 4h2m-2-4h2m-2-4h2m-2 4h2m-2 4h2"></path>
                     </svg>
                     <h3 class="text-xl font-semibold text-white mb-2">Logo Design</h3>
                     <p class="text-gray-400">Craft a memorable visual identity for your brand or bot.</p>
                 </div>
-                <!-- Service Card 3 -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                    <!-- Icon SVG for Website Creation -->
                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-4m4-4-4-4m-6 4-4-4m4 4v4m0-4h4m0 4h-4m0-4-4-4m4 4h4m0-4h4m-4 4-4 4m4 4v4m0-4v-4"></path>
                     </svg>
                     <h3 class="text-xl font-semibold text-white mb-2">Website Creation</h3>
                     <p class="text-gray-400">Professional, responsive websites tailored to your unique needs.</p>
                 </div>
-                <!-- Service Card 4 -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-                    <!-- Icon SVG for More -->
                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7v14"></path>
                     </svg>
@@ -167,12 +152,10 @@
         </div>
     </section>
 
-    <!-- Portfolio/Showcase Section -->
     <section id="portfolio" class="section-padding bg-gray-900">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12">My Work</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
                 <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Bot+Project" alt="Bot Project" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -180,7 +163,6 @@
                         <p class="text-gray-300 px-4">A custom moderation and entertainment bot.</p>
                     </div>
                 </a>
-                <!-- Portfolio Item 2 -->
                 <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Logo+Design" alt="Logo Design" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -188,7 +170,6 @@
                         <p class="text-gray-300 px-4">A professional and clean logo design for a startup.</p>
                     </div>
                 </a>
-                <!-- Portfolio Item 3 -->
                 <a href="#" class="group relative block rounded-lg overflow-hidden shadow-xl transition-transform transform hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/1e293b/a0aec0?text=Website+Creation" alt="Website Creation" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gray-900 bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -200,12 +181,10 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
     <section id="pricing" class="section-padding bg-gray-800">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12">Pricing & Packages</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <!-- Starter Plan -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-blue-500 transition-colors duration-300">
                     <h3 class="text-2xl font-bold text-white mb-4">Starter</h3>
                     <p class="text-4xl font-extrabold text-blue-500 mb-2">
@@ -235,7 +214,6 @@
                         Choose Plan
                     </a>
                 </div>
-                <!-- Pro Plan (Highlighted) -->
                 <div class="bg-blue-600 p-8 rounded-lg shadow-xl border-4 border-blue-500 transform scale-105 transition-transform duration-300">
                     <p class="text-sm font-bold text-white bg-blue-800 rounded-full px-3 py-1 mb-2 inline-block">Most Popular</p>
                     <h3 class="text-2xl font-bold text-white mb-4">Pro</h3>
@@ -266,7 +244,6 @@
                         Choose Plan
                     </a>
                 </div>
-                <!-- Custom Plan -->
                 <div class="bg-gray-700 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-blue-500 transition-colors duration-300">
                     <h3 class="text-2xl font-bold text-white mb-4">Premium</h3>
                     <p class="text-4xl font-extrabold text-white mb-2">
@@ -274,7 +251,7 @@
                         <span class="text-5xl">4.5</span>
                         <span class="text-lg text-blue-200">/ project</span>
                     </p>
-                    <p class="text-sm <tex></tex>t-gray-400 mb-6">For unique, high-scope projects.</p>
+                    <p class="text-sm text-gray-400 mb-6">For unique, high-scope projects.</p>
                     <ul class="text-gray-300 text-left space-y-3 mb-8">
                         <li>
                             <svg class="w-5 h-5 inline-block mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -301,13 +278,11 @@
         </div>
     </section>
 
-<!-- Contact Section -->
 <section id="contact" class="section-padding bg-gray-900">
   <div class="container mx-auto px-4 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-12">Let's Build Something Together</h2>
     <div class="max-w-xl mx-auto">
       
-      <!-- Formcarry Form -->
       <form action="https://formcarry.com/s/QSXUaPPacKG" method="POST" accept-charset="UTF-8" class="space-y-6">
         <div>
           <input type="text" id="name" name="name" placeholder="Your Name" required
@@ -337,7 +312,7 @@
         </button>
       </form>
 
-<div class="mt-8 text-center space-y-2">
+      <div class="mt-8 text-center space-y-2">
   <p class="flex items-center justify-center gap-2 text-gray-300">
     <img src="discord.png" alt="discord" height="20" width="20">
     <a href="https://discordapp.com/users/1247600439331917916" target="_blank"
@@ -404,7 +379,7 @@
           </div>
         `;
       } else if (customStatus) {
-        activityHTML = `<p class="text-sm text-gray-300">💬 ${customStatus.state}</p>`;
+        activityHTML = `<p class="text-sm text-gray-300">Status: ${customStatus.state}</p>`;
       } else if (playingGame) {
         activityHTML = `<p class="text-sm text-gray-300">🎮 Playing <strong>${playingGame.name}</strong></p>`;
       }
@@ -421,7 +396,7 @@
           <span class="text-gray-300 text-sm">${statusText}</span>
         </div>
 
-        <p class="text-gray-400 text-sm italic">Pronouns: ${pronouns}</p>
+        <p class="text-gray-400 text-sm italic">Pronouns: Mirtyu/Left Forever</p>
 
         <div class="mt-3">${activityHTML}</div>
       `;
@@ -434,15 +409,14 @@
   }
 
   fetchDiscordStatus();
-  setInterval(fetchDiscordStatus, 5000); // Refreshes every 5 seconds
+  setInterval(fetchDiscordStatus, 30000); // Refreshes every 5 seconds
 </script>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-6 text-center text-gray-400">
-        <p>&copy; 2025 GopalServices. All rights reserved.</p>
-    </footer>
 
-    <!-- Scroll to Top Button -->
+    <footer class="text-center p-4 bg-gray-900 text-gray-400">
+  <a href="privacy.html" class="hover:underline">Privacy Policy</a> |
+  <a href="terms.html" class="hover:underline">Terms of Service</a>
+</footer>
+
     <button id="scroll-to-top" class="scroll-to-top">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
